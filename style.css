@@ -238,3 +238,29 @@ body.level-5 { background: #FFEBEE; }
 .level-3 .mole { background: #c8e6c9; }
 .level-4 .mole { background: #fff9c4; }
 .level-5 .mole { background: #ffcdd2; }
+
+/* Footer styles */
+#footer {
+  width: 100%;
+  text-align: center;
+  padding: 16px 0 12px 0;
+  background: #f5f5f5;
+  color: #222;
+  font-size: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  letter-spacing: 0.5px;
+}
+
+#footer a {
+  color: #1976D2;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+#footer a:hover {
+  color: #388E3C;
+}

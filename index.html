@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack the Mole Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="main-title">Whack the Mole!</h1>
+  <div class="main-container">
+    <div class="sidebar">
+      <h2 id="sidebar-title">Round Scores</h2>
+      <ul id="score-list"></ul>
+      <div id="total-score-box" class="hidden">
+        <h3>Total Score: <span id="final-score"></span></h3>
+      </div>
+    </div>
+    <div class="game-section">
+      <div id="mode-select-screen">
+        <h2>Choose Game Mode</h2>
+        <div class="mode-buttons">
+          <button class="mode-btn" data-mode="easy">Easy</button>
+          <button class="mode-btn" data-mode="medium">Medium</button>
+          <button class="mode-btn" data-mode="hard">Difficult</button>
+        </div>
+      </div>
+      <div class="scoreboard" id="scoreboard">
+        <span>Score: <span id="score">0</span></span>
+        <span>Time Left: <span id="time">20</span>s</span>
+        <span>Round: <span id="level">1</span></span>
+      </div>
+      <div class="game-board" id="game-board"></div>
+      <button id="start-btn" class="hidden">Start Game</button>
+      <div id="round-over-screen" class="hidden">
+        <h2 id="round-over-title">Round <span id="round-num"></span> Over!</h2>
+        <p>Your Score: <span id="round-score"></span></p>
+        <button id="next-round-btn">Start Round <span id="next-round-num"></span></button>
+      </div>
+      <div id="final-screen" class="hidden">
+        <h2 id="final-title">Game Over!</h2>
+        <p>Your Total Score: <span id="final-score-end"></span></p>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
